@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int i,j,k=0;
+    for(i=0;i<9; i++){
+        for(j=1; j<14; j++){
+            if(j<=7+k&&j>=7-k){
+                printf("*");
+            }
+            else printf(" ");
+        }if(i>3) k--;
+        else k++;
+        printf("\n");
+    }
+    return 0;
+}
