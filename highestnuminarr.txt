@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    
+    int a[50],size,i,high;
+    printf("enter size of arr: ");
+    scanf("%d",&size);
+    printf("enter elements of arr: ");
+    for(i=0; i<size; i++){
+        scanf("%d",&a[i]);
+    }
+    high=a[0];
+    for(i=0; i<size; i++){
+        if(high<a[i]){
+            high=a[i];
+        }
+    }
+printf("%d",high);
+    return 0;
+}

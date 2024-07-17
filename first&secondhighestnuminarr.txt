@@ -1,0 +1,22 @@
+int main() {
+    int n[50];
+    int i,l,sec_l=0,size;
+    printf("enter size of arr: ");
+    scanf("%d",&size);
+    printf("enter elements of arr: ");
+    for(i=0; i<size; i++){
+        scanf("%d",&n[i]);
+        l=n[0];
+    }
+        for(i=0; i<size; i++){
+            if(n[i]>l){
+                sec_l=l;
+                l=n[i];
+            }
+            else if(n[i]>sec_l&&l>n[i]){
+                sec_l=n[i];
+            }
+        }
+    printf("first largest num: %d\nsecond largest num: %d",l,sec_l);
+    return 0;
+}
