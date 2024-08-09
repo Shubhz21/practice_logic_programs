@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+
+int main() {
+    int i; char msg[]="This is india";
+    for(i=13; i>-1; i--){
+        if(msg[i]==' '){continue;}
+        printf("%c", msg[i]);
+    }
+    return 0;
+}
