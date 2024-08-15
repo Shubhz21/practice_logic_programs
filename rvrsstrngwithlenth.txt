@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main() {
+    int i,j,size,val=0;
+    scanf("%d",&size);
+   char str[size];
+   for(i=0; i<=size; i++){
+       scanf("%c",&str[i]);
+       val=i;
+   }
+   while(val>=0){
+       printf("%c",str[val]);
+       val--;
+   }
+   printf("size of string is: %d",sizeof(str));
+
+    return 0;
+}

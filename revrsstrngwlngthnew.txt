@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main() {
+    int i,size,val=0,spc=0;
+    printf("enter size of string: ");
+    scanf("%d",&size);
+   char str[size];
+   printf("enter elements of string: ");
+   for(i=0; i<=size; i++){
+       scanf("%c",&str[i]);
+       val=i;
+   }
+   printf("reversed string is: ");
+   while(val>=0){
+      if(str[val]==' '){val--; spc++;}
+       printf("%c",str[val]);
+       val--;
+   }
+  
+   printf("size of string is: %d",size-spc);
+
+    return 0;
+}
