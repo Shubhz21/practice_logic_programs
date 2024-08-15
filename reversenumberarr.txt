@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, l;
+    printf("enter size of arr: ");
+    scanf("%d",&l);
+    int a[l];
+    printf("enter elements of arr: ");
+    for(i=0; i<=l; i++){
+        scanf("%d",&a[i]);
+    }
+    i=5;
+    printf("reverse order of array elements: [");
+    while(i>=0){
+        printf(" %d ",a[i]);
+        i--;
+    }
+    printf("]");
+    return 0;
+}
